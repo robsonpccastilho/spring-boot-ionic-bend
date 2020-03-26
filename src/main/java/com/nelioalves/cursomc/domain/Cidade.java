@@ -8,11 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-
-<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonBackReference;
-=======
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity

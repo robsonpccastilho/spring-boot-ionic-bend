@@ -14,10 +14,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-<<<<<<< HEAD
-import com.fasterxml.jackson.annotation.JsonBackReference;
-=======
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.nelioalves.cursomc.domain.enums.TipoCliente;
 
@@ -36,22 +32,15 @@ public class Cliente implements Serializable {
 	
 	@JsonManagedReference
 	@OneToMany(mappedBy="cliente")
-<<<<<<< HEAD
 	private List<Endereco> endereco = new ArrayList<>();
-=======
-	private List<Endereco> enderecos = new ArrayList<>();
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 	
 	@ElementCollection
 	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
 
-<<<<<<< HEAD
 	@OneToMany(mappedBy="cliente")
 	private List<Pedido> pedidos= new ArrayList<>();
 	
-=======
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 	public Cliente() {
 		
 	}
@@ -105,21 +94,12 @@ public class Cliente implements Serializable {
 		this.tipo = tipo.getCod();
 	}
 
-<<<<<<< HEAD
 	public List<Endereco> getEndereco() {
 		return endereco;
 	}
 
 	public void setEndereco(List<Endereco> endereco) {
 		this.endereco = endereco;
-=======
-	public List<Endereco> getEnderecos() {
-		return enderecos;
-	}
-
-	public void setEndereco(List<Endereco> enderecos) {
-		this.enderecos = enderecos;
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 	}
 
 	public Set<String> getTelefones() {
@@ -129,7 +109,6 @@ public class Cliente implements Serializable {
 	public void setTelefones(Set<String> telefones) {
 		this.telefones = telefones;
 	}
-<<<<<<< HEAD
 	
 	public List<Pedido> getPedidos() {
 		return pedidos;
@@ -139,8 +118,6 @@ public class Cliente implements Serializable {
 		this.pedidos = pedidos;
 	}
 
-=======
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 
 	@Override
 	public int hashCode() {
@@ -167,8 +144,5 @@ public class Cliente implements Serializable {
 		return true;
 	}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 1aabb704caa6d6707a2335480414e52b8e684f20
 }
