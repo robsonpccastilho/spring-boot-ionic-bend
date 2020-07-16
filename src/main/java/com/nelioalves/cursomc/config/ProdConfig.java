@@ -37,4 +37,5 @@ public class ProdConfig {
 	public EmailService emailService() {
 		return new SmtpEmailService();
 	}
+	
 }
