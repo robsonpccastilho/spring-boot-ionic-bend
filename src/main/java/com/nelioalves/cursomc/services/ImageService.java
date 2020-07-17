@@ -47,7 +47,7 @@ public class ImageService {
 			ImageIO.write(img, extension, os);
 			return new ByteArrayInputStream(os.toByteArray());
 		} catch (IOException e) {
-			throw new FileException("Erro ao ler arquivo");
+			throw new FileException("InputStream -Erro ao ler arquivo");
 		}
 	}
 	
